@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth Table Generator</title>
+    <link rel="stylesheet" href="projectcom/style.css">
+</head>
+<body>
+    <style>
+        body{
+    width: 80%;
+    height: 400px; 
+            background-image:url('https://export-download.canva.com/J2644/DAGPk_J2644/2/0/0001-8704771522275657540.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20240901%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240901T133439Z&X-Amz-Expires=58954&X-Amz-Signature=5008f503fc061ace45e5f74ed4a91938fdc106e59db52c1d42195a920044831c&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27%25E0%25B8%2594%25E0%25B8%25B5%25E0%25B9%2584%25E0%25B8%258B%25E0%25B8%2599%25E0%25B9%258C%25E0%25B8%2597%25E0%25B8%25B5%25E0%25B9%2588%25E0%25B8%25A2%25E0%25B8%25B1%25E0%25B8%2587%25E0%25B9%2584%25E0%25B8%25A1%25E0%25B9%2588%25E0%25B9%2584%25E0%25B8%2594%25E0%25B9%2589%25E0%25B8%2595%25E0%25B8%25B1%25E0%25B9%2589%25E0%25B8%2587%25E0%25B8%258A%25E0%25B8%25B7%25E0%25B9%2588%25E0%25B8%25AD.jpg&response-expires=Mon%2C%2002%20Sep%202024%2005%3A57%3A13%20GMT');
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <div class="container-background">
+        <header>
+            <h1>หาค่าความจริงของตรรกศาสตร์</h1>
+            <p>ใส่นิพจน์เพื่อหาคำตอบ(เช่น p,q เป็นต้น).</p>
+            <p>คำแนะนำ && แทน เเละ
+                || แทน หรือ 
+                <= แทน ถ้า...เเล้ว 
+                ! แทน นิเสธ
+            </p>
+            
+        </header>
+        <main>
+            <form id="truthTableForm">
+                <label for="expression">:</label>
+                <input type="text" id="expression" name="expression" placeholder=" p ∧ q" required>
+                <button type="submit">หาผลลัพธ์</button>
+                <body>
+                    <p>คำแนะนำในการพัฒนาต่อ <a href="https://forms.gle/NHemWZTLiFnSgCnN9" target="_blank">Example.com</a></p>
+                </body>
+            </form>
+            <div id="truthTable"></div>
+        </main>
+        <footer>
+            <p>&copy; .</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
